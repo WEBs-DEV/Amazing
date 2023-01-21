@@ -5260,7 +5260,7 @@ footer .row .footer-contact p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 420px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
 
   .toggle-btn {
