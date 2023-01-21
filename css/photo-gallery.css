@@ -4,9 +4,17 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
+:root {
+    --theme-color: rgb(11, 71, 127);
+    --btn-bg-hover: rgb(209, 223, 222);
+    --primary-color: rgb(29, 7, 47);
+    --secondary-color: rgb(23, 1, 43);
+    --bg-color: white;
+  }
 
 .gallery-container {
-    width: 100%;
+    width: 90%;
+    margin: 20px auto;
     text-align: center;
 }
 
@@ -19,6 +27,7 @@
     font-size: 35px;
     position: relative;
     margin: 40px 0;
+    color: var(--primary-color);
 }
 
 .photo-gallery h1::before {
@@ -26,7 +35,7 @@
     position: absolute;
     width: 100px;
     height: 3px;
-    background-color: red;
+    background-color: var(--theme-color);
     bottom: -10px;
     left: 50%;
     transform: translate(-50%);
@@ -48,31 +57,26 @@
 }
 
 .photo-gallery .top_content {
+    margin: auto;
+    margin-bottom: 20px;
     background-color: rgb(243, 243, 243);
-    width: 90%;
-    margin: 0 auto 20px auto;
-    height: 60px;
+    width: 100%;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     border-radius: 5px;
     box-shadow: 3px 3px 5px lightgray;
 }
 
-.photo-gallery h3 {
-    height: 100%;
-    background-color: rgb(221, 221, 221);
-    line-height: 60px;
-    padding: 0 50px;
-    color: white;
-}
+
 
 .photo-gallery label {
     display: inline-block;
     height: 100%;
-    margin: 0 20px;
-    line-height: 60px;
+    margin: 0 15px;
+    line-height: 40px;
     font-size: 18px;
-    color: grey;
+    color: var(--secondary-color);
     cursor: pointer;
     transition: color .5s;
 }
@@ -82,8 +86,7 @@
 }
 
 .photo-gallery .gallery {
-    width: 90%;
-    margin: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 10px;
@@ -114,7 +117,6 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 22px;
-    font-weight: bold;
     width: 100%;
     margin-top: -100px;
     opacity: 0;
@@ -131,7 +133,6 @@
     transform: translate(-50%, -50%);
     color: white;
     font-size: 22px;
-    font-weight: bold;
     width: 100%;
     margin-top: -100px;
     opacity: 0;
@@ -233,7 +234,7 @@
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media only screen and (min-width: 1201px) {
     .photo-gallery .gallery {
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -245,7 +246,7 @@
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1025px) and (max-width:1200px) {
     .photo-gallery .gallery {
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -255,32 +256,81 @@
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) and (max-width:1024px) {
+    
+    .photo-gallery .top_content {
+        margin: auto;
+        margin-bottom: 20px;
+        background-color: rgb(243, 243, 243);
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        border-radius: 5px;
+        box-shadow: 3px 3px 5px lightgray;
+    }
+    
+    .photo-gallery label {
+        display: inline-block;
+        height: 100%;
+        margin: 0 12px;
+        line-height: 40px;
+        font-size: 18px;
+        color: var(--secondary-color);
+        cursor: pointer;
+        transition: color .5s;
+    }
+
     .photo-gallery .gallery {
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-gap: 10px;
-    }
+    }  
 
 }
 
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (max-width:767px) {
+
+    .gallery-container{
+        width: 95%;
+    }
+
+    .photo-gallery h1 {
+        font-weight: normal;
+        font-size: 30px;
+        position: relative;
+        margin: 35px 0;
+        color: var(--primary-color);
+    }
+    
+    
+    .photo-gallery label {
+        display: inline-block;
+        height: 100%;
+        margin: 0 12px;
+        line-height: 40px;
+        font-size: 18px;
+        color: var(--secondary-color);
+        cursor: pointer;
+        transition: color .5s;
+    }
+
     .photo-gallery .gallery {
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-gap: 20px;
+        grid-gap: 10px;
     }
-
 }
 
 @media only screen and (max-width:420px) {
+
     .photo-gallery .gallery {
-        width: 90%;
+        width: 100%;
         margin: auto;
         display: grid;
         grid-template-columns: repeat(1, 1fr);

@@ -58,16 +58,24 @@ var swiper = new Swiper(".myCompanies", {
     clickable: true,
   },
   breakpoints: {
-    640: {
+    350: {
       slidesPerView: 2,
       spaceBetween: 20,
     },
-    768: {
+    500: {
+      slidesPerView: 3,
+      spaceBetween: 20,
+    },
+    640: {
       slidesPerView: 4,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 5,
       spaceBetween: 40,
     },
     1024: {
-      slidesPerView: 5,
+      slidesPerView: 6,
       spaceBetween: 50,
     },
   },
