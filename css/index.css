@@ -1300,6 +1300,7 @@ a {
 
 .contact-section .row {
   padding: 30px 0;
+  flex-wrap: nowrap;
 }
 
 .contact-section .row .section-head {
@@ -1308,7 +1309,7 @@ a {
   color: var(--primary-color);
 }
 
-.contact-section .row .contact-container {
+.contact-section .row .contact-box {
   display: flex;
   justify-content: space-between;
   padding: 20px 0;
