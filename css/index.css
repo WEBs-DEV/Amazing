@@ -39,13 +39,9 @@ a {
 }
 
 .container {
-  width: 75%;
+  width: 85%;
   margin: auto;
   position: relative;
-}
-
-.header .container {
-  width: 85%;
 }
 
 .header .container .row {
@@ -147,7 +143,6 @@ a {
   background-color: rgb(177, 177, 177);
   background: rgb(145, 139, 139);
 }
-
 /*  header end */
 
 /* navbar start */
@@ -971,7 +966,7 @@ a {
   flex-basis: 300px;
   min-height: 310px;
   margin: 10px 0;
-  background-color: rgb(253, 255, 255);
+  background-color: var(--bg-color);
   border-radius: 7px;
   overflow: hidden;
   transition: all 0.3s;
@@ -1021,8 +1016,14 @@ a {
 }
 
 .section-4 .row .box .box-item:hover {
-  background-color: rgb(177, 177, 177);
+  background-color: var(--theme-color);
   transform: translateY(-20px);
+}
+.section-4 .row .box .box-item:hover h3{
+  color: whitesmoke;
+}
+.section-4 .row .box .box-item:hover p{
+  color: whitesmoke;
 }
 
 /* -------------section-5 start ------------------ */
@@ -1257,6 +1258,7 @@ a {
 .section-7 .row .bottom-box .box .box-item {
   flex-basis: 300px;
   min-width: 300px;
+  height: 100%;
   padding: 5px;
   margin: 30px 5px;
   box-shadow: 0 2px 3px gray;
@@ -1868,8 +1870,12 @@ footer .row .footer-contact p {
 @media only screen and (min-width: 1201px) {
 
   /*  header media query start */
-  .header {
-    width: 100%;
+
+
+  .container {
+    width: 85%;
+    margin: auto;
+    position: relative;
   }
 
   .header .container .row {
@@ -1879,7 +1885,7 @@ footer .row .footer-contact p {
   }
 
   .header .container .row .left {
-    flex-basis: 750px;
+    flex-basis: 700px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -1887,7 +1893,7 @@ footer .row .footer-contact p {
   }
 
   .header .container .row .left .address {
-    flex-basis: 350px;
+    flex-basis: 330px;
   }
 
   .header .container .row .left p {
@@ -1920,7 +1926,7 @@ footer .row .footer-contact p {
     display: inline-block;
     width: 25px;
     height: 25px;
-
+  
   }
 
   .header .container .row .right .social-icons a i {
@@ -1928,9 +1934,7 @@ footer .row .footer-contact p {
     margin: auto;
     line-height: 25px;
   }
-
   /*  header end */
-
 
 }
 
