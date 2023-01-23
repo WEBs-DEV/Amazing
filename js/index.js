@@ -83,3 +83,7 @@ var swiper = new Swiper(".myCompanies", {
 
 
 
+$(document).ready(function () {
+  $('#home-gallery').load('photo-gallery.html');
+}
+)
