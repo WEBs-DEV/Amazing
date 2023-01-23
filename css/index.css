@@ -4746,7 +4746,6 @@ footer .row .footer-contact p {
     font-size: 20px;
   }
 
-
   /* -------------section-7 start ------------------ */
   .section-7 {
     margin: 20px 0;
@@ -5428,6 +5427,8 @@ footer .row .footer-contact p {
   }
 
   #banner .row {
+    margin: auto;
+    width: 95%;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -5627,7 +5628,6 @@ footer .row .footer-contact p {
     width: 100%;
     display: none;
     overflow: hidden;
-
   }
 
   #banner .row .col-right .animatebox {
