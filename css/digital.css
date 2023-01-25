@@ -803,20 +803,17 @@ body {
 }
 
 /* -------------Digital marketing partnership section start ------------------ */
-.partnership-section {
-
-}
+.partnership-section {}
 
 .partnership-section .container .row {
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 .partnership-section .container .row .left {
-  flex-basis: 500px;
-  min-width: 350px;
+  flex-basis: 40%;
 }
 
 .partnership-section .container .row .left img {
@@ -824,12 +821,13 @@ body {
 }
 
 .partnership-section .container .row .right {
-  flex-basis: 600px;
-  min-width: 350px;
+  flex-basis: 55%;
   text-align: left;
 }
 
 .partnership-section .container .row .right .heading {
+  margin: auto;
+  text-align: center;
   font-size: 22px;
   margin-bottom: 50px;
   position: relative;
@@ -839,10 +837,10 @@ body {
 .partnership-section .container .row .right .heading::after {
   content: '';
   position: absolute;
-  top: 120%;
+  top: 110%;
   width: 65px;
   height: 3px;
-  background: blueviolet;
+  background: var(--theme-color);
 }
 
 .partnership-section .container .row .right .para {
@@ -862,11 +860,7 @@ body {
   color: var(--secondary-color);
 }
 
-.partnership-section .container .row .right .btn {
-  margin: auto;
-  text-align: left;
 
-}
 
 .partnership-section .container .row .right .btn a {
   display: inline-block;
@@ -887,21 +881,22 @@ body {
 }
 
 /* -------------core business section start ------------------ */
-.core-business-section {}
+.core-business-section {
+
+}
 
 .core-business-section .container .row {
   padding: 30px 0;
 }
 
 .core-business-section .container .row .section-head {
-  margin: auto;
+  text-align: center;
   margin-bottom: 20px;
-  max-width: 750px;
 }
 
 .core-business-section .container .row .section-head .heading {
-  font-size: 22px;
-  margin-bottom: 50px;
+  font-size: 27px;
+  margin-bottom: 30px;
   position: relative;
   color: var(--primary-color);
 }
@@ -911,32 +906,30 @@ body {
   position: absolute;
   text-align: center;
   margin: auto;
-  top: 120%;
-  background: blueviolet;
+  top: 110%;
+  background:var(--theme-color);
   left: 45%;
   width: 65px;
   height: 3px;
 }
 
 .core-business-section .container .row .section-head .para {
-  font-size: 17px;
+  text-align: center;
+  font-size: 25px;
   color: var(--secondary-color);
 }
 
 .core-business-section .container .row .business-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
-
 }
 
 .core-business-section .container .row .business-container .business {
   text-align: left;
-  width: 350px;
-  height: 220px;
-  margin: 10px;
-  padding: 30px 20px;
+  width: 320px;
+  padding:10px;
   transition: all 0.3s ease-in-out;
 }
 
@@ -965,7 +958,7 @@ body {
 
 .core-business-section .container .row .business-container .business:hover {
   box-shadow: 0 2px 8px grey;
-  transform: scale(1.04);
+  transform: scale(1.02);
 }
 
 /* -------------social meadia section start ------------------ */
@@ -1798,6 +1791,13 @@ footer .row .footer-contact p {
     font-weight: 500;
   }
 
+  .core-business-section .container .row .business-container .business {
+    text-align: left;
+    width: 300px;
+    flex-grow: 1;
+    padding:10px;
+    transition: all 0.3s ease-in-out;
+  }
 
 
 
@@ -2299,60 +2299,124 @@ footer .row .footer-contact p {
 
   /* -------------Digital marketing graph start ------------------ */
 
-.digital-marketing-graph {
-  height: 500px;
-}
+  .digital-marketing-graph {
+    height: 500px;
+  }
 
 
-.digital-marketing-graph .container .row .img {
-  top: 200px;
-  left: auto;
-  max-width: 1000px;
-}
+  .digital-marketing-graph .container .row .img {
+    top: 200px;
+    left: auto;
+    max-width: 1000px;
+  }
 
   /* -------------Contact Us section start ------------------ */
-.contact-us-section {
-  background: url('../images/digitalMarketingImages/contactUsBg.png');
-  background-size: cover;
-  background-position: bottom;
-  color: whitesmoke;
-  height: 600px;
-  display: flex;
+  .contact-us-section {
+    background: url('../images/digitalMarketingImages/contactUsBg.png');
+    background-size: cover;
+    background-position: bottom;
+    color: whitesmoke;
+    height: 600px;
+    display: flex;
+  }
+
+  .contact-us-section .container .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+
+  .contact-us-section .container .row .para {
+    font-size: 30px;
+    line-height: 45px;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 40px;
+    max-width: 1000px;
+  }
+
+  .contact-us-section .container .row .btn a {
+    padding: 9px 30px;
+  }
+
+  .seo-services .container .row .section-heading {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+
+  .seo-services .container .row .section-para {
+    font-size: 20px;
+    margin-bottom: 30px;
+    line-height: 26px;
+  }
+
+
+  .partnership-section .container .row .right {
+    flex-basis: 55%;
+    text-align: left;
+  }
+
+  .partnership-section .container .row .right .heading {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .partnership-section .container .row .right .para {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .partnership-section .container .row .right .sub-para {
+    font-size: 16px;
+  }
+
+  .partnership-section .container .row .right .sub-para p {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  
+.core-business-section .container .row .section-head .heading {
+  font-size: 25px;
+  margin-bottom: 25px;
+  position: relative;
+  color: var(--primary-color);
 }
 
-.contact-us-section .container .row {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  padding: 20px 0;
-}
-
-.contact-us-section .container .row .para {
-  font-size: 30px;
-  line-height: 45px;
-  font-weight: 500;
+.core-business-section .container .row .section-head .heading::after {
+  content: '';
+  position: absolute;
   text-align: center;
-  margin-bottom: 40px;
-  max-width: 1000px;
+  margin: auto;
+  top: 110%;
+  background:var(--theme-color);
+  left: 45%;
+  width: 65px;
+  height: 3px;
 }
 
-.contact-us-section .container .row .btn a {
-  padding: 9px 30px;
-}
-
-
-.seo-services .container .row .section-heading {
-  font-size: 22px;
-  margin-bottom: 30px;
-}
-
-.seo-services .container .row .section-para {
+.core-business-section .container .row .section-head .para {
+  text-align: center;
   font-size: 20px;
-  margin-bottom: 30px;
-  line-height: 26px;
+  color: var(--secondary-color);
 }
 
+.core-business-section .container .row .business-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+}
+
+.core-business-section .container .row .business-container .business {
+  text-align: left;
+  width: 250px;
+  flex-grow: 1;
+  padding:10px;
+  transition: all 0.3s ease-in-out;
+}
 
 
   /* -------------section-11 start ------------------ */
@@ -2958,36 +3022,24 @@ footer .row .footer-contact p {
     font-size: 15px;
   }
 
-  .marketing-strategy .row .right .strategy-container .contact a:hover {
-    transform: scale(1.08) translateY(-8px);
-    background: var(--btn-bg-hover);
-    color: black;
-    box-shadow: 0 2px 8px grey;
-    font-weight: 500;
-  }
-
   /* -------------Digital marketing graph start ------------------ */
 
   .digital-marketing-graph {
     height: 400px;
   }
-  
+
   .digital-marketing-graph .container .row .img {
     top: 150px;
     left: auto;
     max-width: 1000px;
   }
-  
-    /* -------------Contact Us section start ------------------ */
+
+  /* -------------Contact Us section start ------------------ */
   .contact-us-section {
     background: url('../images/digitalMarketingImages/contactUsBg.png');
-    background-size: cover;
-    background-position: bottom;
-    color: whitesmoke;
     height: 400px;
-    display: flex;
   }
-  
+
   .contact-us-section .container .row {
     width: 100%;
     height: 100%;
@@ -2995,35 +3047,97 @@ footer .row .footer-contact p {
     flex-direction: column;
     padding: 20px 0;
   }
-  
+
   .contact-us-section .container .row .para {
     font-size: 28px;
     line-height: 35px;
     margin-bottom: 30px;
   }
-  
+
   .contact-us-section .container .row .btn a {
     padding: 9px 30px;
   }
 
+
+  .seo-services .container .row .section-heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .seo-services .container .row .section-heading::after {
+    width: 70px;
+    top: 110%;
+    left: 43%;
+  }
+
+  .seo-services .container .row .section-para {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 40px;
+    line-height: 26px;
+  }
+
+  .partnership-section .container .row .left {
+    flex-basis: 100%;
+  }
+
+  .partnership-section .container .row .right {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+
+  .partnership-section .container .row .right .heading {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+
+  .partnership-section .container .row .right .para {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+
+  .partnership-section .container .row .right .sub-para {
+    font-size: 15px;
+  }
+
+  .partnership-section .container .row .right .sub-para p {
+    line-height: 25px;
+    margin-bottom: 20px;
+  }
+
+  .core-business-section .container .row .section-head .heading {
+    font-size: 20px;
+    margin-bottom: 25px;
+    position: relative;
+    color: var(--primary-color);
+  }
   
-.seo-services .container .row .section-heading {
+  .core-business-section .container .row .section-head .heading::after {
+    content: '';
+    position: absolute;
+    text-align: center;
+    margin: auto;
+    top: 110%;
+    background:var(--theme-color);
+    left: 41%;
+    width: 60px;
+    height: 3px;
+  }
+  
+  .core-business-section .container .row .section-head .para {
   font-size: 18px;
-  margin-bottom: 30px;
-}
-
-.seo-services .container .row .section-heading::after {
-  width: 70px;
-  top: 110%;
-  left: 43%;
-}
-
-.seo-services .container .row .section-para {
-  font-size: 18px;
-  color: var(--secondary-color);
-  margin-bottom: 40px;
-  line-height: 26px;
-}
+  }
+  
+  .core-business-section .container .row .business-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+  
+  .core-business-section .container .row .business-container .business {
+    width: 250px;
+  }  
 
   /* -------------section-11 start ------------------ */
   .section-11 {
@@ -3439,8 +3553,9 @@ footer .row .footer-contact p {
     padding: 25px 0;
     font-size: 18px;
   }
-  .marketing-strategy .row .right .strategy-container .strategy{
-    margin-bottom:10px;
+
+  .marketing-strategy .row .right .strategy-container .strategy {
+    margin-bottom: 10px;
   }
 
   .marketing-strategy .row .right .strategy-container .contact a {
@@ -3448,53 +3563,71 @@ footer .row .footer-contact p {
     font-size: 15px;
   }
 
-    /* -------------Digital marketing graph start ------------------ */
+  /* -------------Digital marketing graph start ------------------ */
 
-    .digital-marketing-graph {
-      height: 250px;
-    }
-    
-    .digital-marketing-graph .container .row .img {
-      top: 100px;
-    }
-    
-      /* -------------Contact Us section start ------------------ */
-    .contact-us-section {
-      background: url('../images/digitalMarketingImages/contactUsBg.png');
-      background-size: cover;
-      background-position: bottom;
-      color: whitesmoke;
-      height: 300px;
-    }
-    
-    .contact-us-section .container .row .para {
-      font-size: 22px;
-      line-height: 28px;
-      margin-bottom: 20px;
-    }
-    
-    .contact-us-section .container .row .btn a {
-      padding: 7px 15px;
-      font-size: 16px;
-    }
+  .digital-marketing-graph {
+    height: 250px;
+  }
 
-    .seo-services .container .row .section-heading {
-      font-size: 17px;
-      margin-bottom: 30px;
-    }
-    
-    .seo-services .container .row .section-heading::after {
-      width: 60px;
-      top: 110%;
-      left: 41%;
-    }
-    
-    .seo-services .container .row .section-para {
-      font-size: 16px;
-      color: var(--secondary-color);
-      margin-bottom: 20px;
-      line-height: 22px;
-    }
+  .digital-marketing-graph .container .row .img {
+    top: 100px;
+  }
+
+  /* -------------Contact Us section start ------------------ */
+  .contact-us-section {
+    background: url('../images/digitalMarketingImages/contactUsBg.png');
+    background-size: cover;
+    background-position: bottom;
+    color: whitesmoke;
+    height: 300px;
+  }
+
+  .contact-us-section .container .row .para {
+    font-size: 22px;
+    line-height: 28px;
+    margin-bottom: 20px;
+  }
+
+  .contact-us-section .container .row .btn a {
+    padding: 7px 15px;
+    font-size: 16px;
+  }
+
+  .seo-services .container .row .section-heading {
+    font-size: 17px;
+    margin-bottom: 30px;
+  }
+
+  .seo-services .container .row .section-heading::after {
+    width: 60px;
+    top: 110%;
+    left: 41%;
+  }
+
+  .seo-services .container .row .section-para {
+    font-size: 16px;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+    line-height: 22px;
+  }
+
+  .partnership-section .container .row .right {
+    flex-basis: 100%;
+    margin-bottom: 25px;
+  }
+
+  .partnership-section .container .row .right .heading {
+    font-size: 17px;
+  }
+
+  .partnership-section .container .row .right .para {
+    font-size: 17px;
+  }
+
+  .partnership-section .container .row .right .btn a {
+    font-size: 16px;
+    padding: 7px 15px;
+  }
 
   /* -------------section-11 start ------------------ */
   .section-11 {
