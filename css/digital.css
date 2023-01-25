@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 85%;
   margin: auto;
   position: relative;
 }
@@ -340,26 +340,28 @@ body {
   background-size: cover;
   background-attachment: fixed;
   color: whitesmoke;
+  width: 100%;
+  margin: auto;
 }
 
 .digital-marketing-banner .container .row {
+  padding-top: 20px;
   display: flex;
-  flex-wrap: wrap;
+  width: 95%;
+  margin: auto;
   justify-content: space-around;
   align-items: center;
   min-height: 87.5vh;
+  max-height: 100%;
 }
 
 .digital-marketing-banner .container .row .left {
-  flex-basis: 45%;
+  flex-basis: 50%;
   text-align: left;
 }
 
 .digital-marketing-banner .container .row .left .agency {
   font-size: 20px;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
   color: rgb(29, 27, 27);
 }
 
@@ -377,19 +379,17 @@ body {
   color: var(--secondary-color);
 }
 
-.digital-marketing-banner .container .row .left .btn {
-
-}
+.digital-marketing-banner .container .row .left .btn {}
 
 .digital-marketing-banner .container .row .left .btn a {
   margin: auto;
   display: inline-block;
   font-size: 19px;
-  padding: 8px 35px;
+  padding: 8px 30px;
   text-decoration: none;
   color: whitesmoke;
   background: var(--theme-color);
-  margin-right: 15px;
+  margin-right: 10px;
   border-radius: 8px;
   letter-spacing: 1px;
   box-shadow: 0 2px 10px grey;
@@ -408,11 +408,14 @@ body {
 
 .digital-marketing-banner .container .row .right .img {
   width: 100%;
+  min-width: 600px;
 }
 
 .digital-marketing-banner .container .row .right .img img {
-  max-width: 500px;
-  min-width: 200px;
+  width: 100%;
+}
+
+.digital-marketing-banner .container .row .right .img img {
   transition: all 1s ease-in-out;
 }
 
@@ -429,12 +432,9 @@ body {
   background-size: cover;
   background-position: center;
   z-index: -1;
-
 }
 
-.digital-marketing-services .container .row {
-
-}
+.digital-marketing-services .container .row {}
 
 .digital-marketing-services .container .row .section-heading {
   padding: 25px 0;
@@ -447,14 +447,13 @@ body {
 
 .digital-marketing-services .container .row .box {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 
 .digital-marketing-services .container .row .box .left {
   flex-basis: 40%;
-  margin-bottom: 20px;
 }
 
 .digital-marketing-services .container .row .box .left .img {
@@ -466,7 +465,7 @@ body {
 }
 
 .digital-marketing-services .container .row .right {
-  flex-basis: 60%;
+  flex-basis: 55%;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -474,11 +473,9 @@ body {
 
 .digital-marketing-services .container .row .right .services-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
-
 
 .right .services-container .service {
   display: flex;
@@ -487,10 +484,12 @@ body {
   min-height: 120px;
   padding: 5px 0;
   border-radius: 3px;
+  margin-bottom: 10px;
 }
 
 .right .services-container .service .img {
   flex-basis: 60px;
+  min-width: 40px;
 }
 
 .right .services-container .service .img img {
@@ -515,27 +514,17 @@ body {
 }
 
 
-
 /* -------------marketing strategy start ------------------ */
-.marketing-strategy {
-
-}
+.marketing-strategy {}
 
 .marketing-strategy .row {
   display: flex;
   justify-content: space-around;
   padding: 50px 0;
-  flex-wrap: wrap;
 }
 
 .marketing-strategy .row .left {
-  min-width: 350px;
-  flex-basis: 45%;
-
-}
-
-.marketing-strategy .row .left .img {
-  width: 100%;
+  flex-basis: 40%;
 }
 
 .marketing-strategy .row .left .img img {
@@ -548,13 +537,12 @@ body {
 }
 
 .marketing-strategy .row .right {
-  flex-basis: 45%;
-  text-align: left;
+  flex-basis: 55%;
 }
 
 .marketing-strategy .row .right .heading {
-  font-size: 20px;
-  margin-bottom: 40px;
+  font-size: 25px;
+  margin-bottom: 30px;
   color: var(--primary-color);
   position: relative;
 }
@@ -564,13 +552,12 @@ body {
   position: absolute;
   width: 60px;
   height: 3px;
-  top: 120%;
-  background: blueviolet;
+  top: 110%;
+  background: var(--theme-color);
 }
 
 .marketing-strategy .row .right .para {
   font-size: 18px;
-  font-weight: 500;
   color: var(--secondary-color);
   margin-bottom: 30px;
 }
@@ -581,14 +568,14 @@ body {
 
 .marketing-strategy .row .right .strategy-container {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
 .marketing-strategy .row .right .strategy-container .strategy {
-  flex-basis: 300px;
-  margin: 15px 5px;
+  flex-basis: 280px;
+
 }
 
 .marketing-strategy .row .right .strategy-container .strategy img {}
@@ -602,7 +589,8 @@ body {
 
 .marketing-strategy .row .right .strategy-container .title-para {
   margin-left: 20px;
-  font-size: 18px;
+  font-size: 16px;
+  line-height: 25px;
   font-weight: 500;
   margin-bottom: 16px;
   color: var(--secondary-color);
@@ -644,15 +632,14 @@ body {
 
 .digital-marketing-graph .container .row {
   position: relative;
-
   width: 100%;
   height: 100%;
 }
 
 .digital-marketing-graph .container .row .img {
   position: absolute;
-  top: 80px;
-  left: 15%;
+  top: 100px;
+  left: auto;
   width: 100%;
   height: 100%;
   max-width: 1000px;
@@ -685,6 +672,7 @@ body {
   font-size: 35px;
   line-height: 45px;
   font-weight: 500;
+  text-align: center;
   margin-bottom: 40px;
   max-width: 1000px;
 }
@@ -692,8 +680,8 @@ body {
 .contact-us-section .container .row .btn a {
   text-decoration: none;
   padding: 9px 30px;
-  color: black;
-  background: white;
+  color: whitesmoke;
+  background: var(--theme-color);
   border-radius: 8px;
   transition: all 0.4s ease-in-out;
   letter-spacing: 1px;
@@ -706,7 +694,7 @@ body {
 .contact-us-section .container .row .btn a:hover {
 
   background: var(--btn-bg-hover);
-  color: black;
+  color: rgb(240, 251, 255);
   box-shadow: 0 2px 8px grey;
   font-weight: 500;
   transform: scale(1.08) translateY(-8px);
@@ -718,7 +706,7 @@ body {
 }
 
 .seo-services .container .row {
-  margin: auto;
+  text-align: center;
   padding: 40px 0;
 }
 
@@ -726,7 +714,7 @@ body {
   text-align: center;
   margin: auto;
   position: relative;
-  font-size: 22px;
+  font-size: 25px;
   margin-bottom: 50px;
   color: var(--primary-color);
 }
@@ -737,20 +725,20 @@ body {
   text-align: center;
   width: 80px;
   height: 3px;
-  top: 120%;
+  top: 110%;
   left: 46%;
-  background: blueviolet;
+  background: var(--theme-color);
 }
 
 .seo-services .container .row .section-para {
-  font-size: 18px;
+  font-size: 20px;
   color: var(--secondary-color);
   margin-bottom: 40px;
 }
 
 .seo-services .container .row .services-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
@@ -777,7 +765,7 @@ body {
   height: inherit;
   top: 0;
   left: 0;
-  background-color: rgb(248, 248, 248);
+  background-color: white;
   z-index: -1;
 }
 
@@ -787,7 +775,7 @@ body {
 
 .seo-services .container .row .services-container .service::after {
   transform: rotate(-60deg);
-  background-color: rgb(248, 248, 248);
+  background-color: white;
 }
 
 .seo-services .container .row .services-container .service .img {
@@ -815,7 +803,9 @@ body {
 }
 
 /* -------------Digital marketing partnership section start ------------------ */
-.partnership-section {}
+.partnership-section {
+
+}
 
 .partnership-section .container .row {
   display: flex;
@@ -926,12 +916,11 @@ body {
   left: 45%;
   width: 65px;
   height: 3px;
-
 }
 
 .core-business-section .container .row .section-head .para {
   font-size: 17px;
-  color:var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .core-business-section .container .row .business-container {
@@ -1528,12 +1517,6 @@ footer .row .footer-contact p {
     width: 100%;
   }
 
-  .container {
-    width: 75%;
-    margin: auto;
-    position: relative;
-  }
-
   .header .container .row {
     width: 100%;
     display: flex;
@@ -1592,8 +1575,6 @@ footer .row .footer-contact p {
   }
 
   /*  header end */
-
-
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
@@ -1661,6 +1642,11 @@ footer .row .footer-contact p {
 
   /*  header end */
 
+
+
+
+
+
   /* navbar start */
   #navbar {
     width: 100%;
@@ -1689,6 +1675,130 @@ footer .row .footer-contact p {
   }
 
   /* navbar end */
+
+
+  .digital-marketing-banner .container .row .left {
+    flex-basis: 50%;
+    text-align: left;
+  }
+
+  .digital-marketing-banner .container .row .left .agency {
+    font-size: 16px;
+  }
+
+  .digital-marketing-banner .container .row .left .heading {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .digital-marketing-banner .container .row .left .para {
+    font-size: 16px;
+    margin-bottom: 30px;
+    line-height: 22px;
+  }
+
+  .right .services-container .service {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 252px;
+    min-height: 120px;
+    padding: 3px 0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  .marketing-strategy .row {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+
+  .marketing-strategy .row .left {
+    flex-basis: 40%;
+  }
+
+  .marketing-strategy .row .left .img img {
+    width: 100%;
+    transition: all 0.4s;
+  }
+
+  .marketing-strategy .row .left .img img:hover {
+    transform: scale(0.9);
+  }
+
+  .marketing-strategy .row .right {
+    flex-basis: 55%;
+  }
+
+  .marketing-strategy .row .right .heading {
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+    position: relative;
+  }
+
+  .marketing-strategy .row .right .heading::after {
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 3px;
+    top: 110%;
+    background: var(--theme-color);
+  }
+
+  .marketing-strategy .row .right .para {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+  }
+
+  .marketing-strategy .row .right .para p {
+    line-height: 25px;
+  }
+
+  .marketing-strategy .row .right .strategy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .marketing-strategy .row .right .strategy-container .strategy {
+    flex-basis: 250px;
+
+  }
+
+  .marketing-strategy .row .right .strategy-container .title {
+    font-size: 14px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact {
+    margin-left: 20px;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 25px;
+    color: whitesmoke;
+    background: var(--theme-color);
+    border-radius: 8px;
+    transition: all 0.4s;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact a:hover {
+    transform: scale(1.08) translateY(-8px);
+    background: var(--btn-bg-hover);
+    color: black;
+    box-shadow: 0 2px 8px grey;
+    font-weight: 500;
+  }
+
+
 
 
   /* -------------footer start ------------------ */
@@ -2005,6 +2115,244 @@ footer .row .footer-contact p {
     opacity: 0;
     visibility: hidden;
   }
+
+  .digital-marketing-banner .container .row .left {
+    flex-basis: 100%;
+    text-align: left;
+  }
+
+  .digital-marketing-banner .container .row .left .agency {
+    font-size: 15px;
+  }
+
+  .digital-marketing-banner .container .row .left .heading {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .digital-marketing-banner .container .row .left .para {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+  }
+
+  .digital-marketing-banner .container .row .left .btn a {
+    font-size: 16px;
+    padding: 7px 30px;
+    margin-right: 10px;
+  }
+
+  .digital-marketing-banner .container .row .right .img {
+    width: 100%;
+    min-width: 400px;
+  }
+
+  .digital-marketing-services .container .row .box {
+    flex-wrap: wra;
+  }
+
+  .digital-marketing-services .container .row .box .left {
+    text-align: center;
+    flex-basis: 100%;
+  }
+
+  .digital-marketing-services .container .row .box .left .img {
+    margin: auto;
+  }
+
+  .digital-marketing-services .container .row .box .left img {
+    width: 70%;
+  }
+
+  .digital-marketing-services .container .row .right {
+    flex-basis: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .digital-marketing-services .container .row .right .services-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .right .services-container .service {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 280px;
+    min-height: 120px;
+    padding: 5px 0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  .right .services-container .service .img {
+    flex-basis: 60px;
+    min-width: 40px;
+  }
+
+  .right .services-container .service .img img {
+    width: 100%;
+  }
+
+  .right .services-container .service .service-content {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .services-container .service .service-name {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  .services-container .service .para {
+    font-size: 15px;
+    line-height: 20px;
+    color: whitesmoke;
+  }
+
+
+  .marketing-strategy .row {
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0;
+  }
+
+  .marketing-strategy .row .left {
+    flex-basis: 40%;
+  }
+
+  .marketing-strategy .row .left .img img {
+    width: 100%;
+    transition: all 0.4s;
+  }
+
+  .marketing-strategy .row .left .img img:hover {
+    transform: scale(0.9);
+  }
+
+  .marketing-strategy .row .right {
+    flex-basis: 58%;
+  }
+
+  .marketing-strategy .row .right .heading {
+    font-size: 25px;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .marketing-strategy .row .right .para {
+    font-size: 17px;
+    margin-bottom: 15px;
+  }
+
+  .marketing-strategy .row .right .strategy-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+  }
+
+  .marketing-strategy .row .right .strategy-container .strategy {
+    flex-basis: 210px;
+    flex-grow: 1;
+  }
+
+  .marketing-strategy .row .right .strategy-container .strategy img {
+    width: 70px;
+
+  }
+
+  .marketing-strategy .row .right .strategy-container .title {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .strategy-container .strategy .title-para p {
+    font-size: 15px;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact {
+    margin-left: 20px;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact a {
+    text-decoration: none;
+    display: inline-block;
+    padding: 7px 25px;
+    color: whitesmoke;
+    background: var(--theme-color);
+    border-radius: 8px;
+    transition: all 0.4s;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact a:hover {
+    transform: scale(1.08) translateY(-8px);
+    background: var(--btn-bg-hover);
+    color: black;
+    box-shadow: 0 2px 8px grey;
+    font-weight: 500;
+  }
+
+  /* -------------Digital marketing graph start ------------------ */
+
+.digital-marketing-graph {
+  height: 500px;
+}
+
+
+.digital-marketing-graph .container .row .img {
+  top: 200px;
+  left: auto;
+  max-width: 1000px;
+}
+
+  /* -------------Contact Us section start ------------------ */
+.contact-us-section {
+  background: url('../images/digitalMarketingImages/contactUsBg.png');
+  background-size: cover;
+  background-position: bottom;
+  color: whitesmoke;
+  height: 600px;
+  display: flex;
+}
+
+.contact-us-section .container .row {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 0;
+}
+
+.contact-us-section .container .row .para {
+  font-size: 30px;
+  line-height: 45px;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 40px;
+  max-width: 1000px;
+}
+
+.contact-us-section .container .row .btn a {
+  padding: 9px 30px;
+}
+
+
+.seo-services .container .row .section-heading {
+  font-size: 22px;
+  margin-bottom: 30px;
+}
+
+.seo-services .container .row .section-para {
+  font-size: 20px;
+  margin-bottom: 30px;
+  line-height: 26px;
+}
+
 
 
   /* -------------section-11 start ------------------ */
@@ -2423,6 +2771,260 @@ footer .row .footer-contact p {
 
   /*--- menu end ---*/
 
+  .digital-marketing-banner .container .row {
+    flex-wrap: wrap;
+  }
+
+  .digital-marketing-banner .container .row .left {
+    margin-top: 20px;
+    flex-basis: 100%;
+    text-align: left;
+  }
+
+  .digital-marketing-banner .container .row .left .agency {
+    font-size: 16px;
+  }
+
+  .digital-marketing-banner .container .row .left .heading {
+    font-size: 22px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .digital-marketing-banner .container .row .left .para {
+    font-size: 15px;
+    margin-bottom: 10px;
+    line-height: 22px;
+  }
+
+  .digital-marketing-banner .container .row .left .btn {
+    margin-bottom: 10px;
+  }
+
+  .digital-marketing-banner .container .row .left .btn a {
+    font-size: 16px;
+    padding: 7px 0px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+  }
+
+  .digital-marketing-banner .container .row .right {
+    flex-basis: 100%;
+    display: none;
+  }
+
+  .digital-marketing-banner .container .row .right .img {
+    width: 100%;
+    min-width: 400px;
+  }
+
+  .digital-marketing-banner .container .row .left {
+    flex-basis: 100%;
+    text-align: left;
+  }
+
+  .digital-marketing-banner .container .row .left .agency {
+    font-size: 15px;
+  }
+
+  .digital-marketing-banner .container .row .left .heading {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-bottom: 10px;
+  }
+
+  .digital-marketing-banner .container .row .left .para {
+    font-size: 16px;
+    margin-bottom: 10px;
+    line-height: 22px;
+  }
+
+  .digital-marketing-banner .container .row .left .btn a {
+    font-size: 17px;
+    padding: 7px 30px;
+    margin-right: 10px;
+  }
+
+  .digital-marketing-banner .container .row .right .img {
+    width: 100%;
+    min-width: 400px;
+  }
+
+  .digital-marketing-services .container .row .section-heading {
+    padding: 25px 0;
+    font-size: 20px;
+  }
+
+  .digital-marketing-services .container .row .box .left {
+    text-align: center;
+    flex-basis: 100%;
+    margin-bottom: 15px;
+  }
+
+  .digital-marketing-services .container .row .box .left .img {
+    margin: auto;
+  }
+
+  .digital-marketing-services .container .row .box .left img {
+    width: 70%;
+  }
+
+  .digital-marketing-services .container .row .right {
+    flex-basis: 100%;
+  }
+
+  .digital-marketing-services .container .row .right .services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .right .services-container .service {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 100%;
+    min-height: 120px;
+    padding: 5px 0;
+    border-radius: 3px;
+    margin-bottom: 10px;
+  }
+
+  .right .services-container .service .img {
+    flex-basis: 60px;
+    min-width: 40px;
+  }
+
+  .right .services-container .service .img img {
+    width: 100%;
+  }
+
+  .right .services-container .service .service-content {
+    text-align: left;
+    margin-left: 10px;
+  }
+
+  .services-container .service .service-name {
+    font-size: 17px;
+    color: white;
+    margin-bottom: 5px;
+  }
+
+  .services-container .service .para {
+    font-size: 15px;
+    line-height: 20px;
+    color: whitesmoke;
+  }
+
+  .marketing-strategy .row .heading h2 {
+    font-size: 30px;
+  }
+
+  .marketing-strategy .row .para p {
+    font-size: 18px;
+  }
+
+  .marketing-strategy .row .left {
+    display: none;
+  }
+
+  .marketing-strategy .row .right {
+    flex-basis: 100%;
+  }
+
+  .marketing-strategy .row .right .strategy-container .strategy {
+    flex-basis: 200px;
+    flex-grow: 1;
+  }
+
+  .marketing-strategy .row .right .strategy-container .strategy img {
+    width: 50px;
+  }
+
+  .marketing-strategy .row .right .strategy-container .title {
+    font-size: 13px;
+    margin-bottom: 10px;
+  }
+
+  .strategy-container .strategy .title-para p {
+    font-size: 15px;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact {
+    margin: auto;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact a {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact a:hover {
+    transform: scale(1.08) translateY(-8px);
+    background: var(--btn-bg-hover);
+    color: black;
+    box-shadow: 0 2px 8px grey;
+    font-weight: 500;
+  }
+
+  /* -------------Digital marketing graph start ------------------ */
+
+  .digital-marketing-graph {
+    height: 400px;
+  }
+  
+  .digital-marketing-graph .container .row .img {
+    top: 150px;
+    left: auto;
+    max-width: 1000px;
+  }
+  
+    /* -------------Contact Us section start ------------------ */
+  .contact-us-section {
+    background: url('../images/digitalMarketingImages/contactUsBg.png');
+    background-size: cover;
+    background-position: bottom;
+    color: whitesmoke;
+    height: 400px;
+    display: flex;
+  }
+  
+  .contact-us-section .container .row {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 0;
+  }
+  
+  .contact-us-section .container .row .para {
+    font-size: 28px;
+    line-height: 35px;
+    margin-bottom: 30px;
+  }
+  
+  .contact-us-section .container .row .btn a {
+    padding: 9px 30px;
+  }
+
+  
+.seo-services .container .row .section-heading {
+  font-size: 18px;
+  margin-bottom: 30px;
+}
+
+.seo-services .container .row .section-heading::after {
+  width: 70px;
+  top: 110%;
+  left: 43%;
+}
+
+.seo-services .container .row .section-para {
+  font-size: 18px;
+  color: var(--secondary-color);
+  margin-bottom: 40px;
+  line-height: 26px;
+}
+
   /* -------------section-11 start ------------------ */
   .section-11 {
     position: absolute;
@@ -2648,7 +3250,7 @@ footer .row .footer-contact p {
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 420px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
 
   .toggle-btn {
@@ -2822,7 +3424,6 @@ footer .row .footer-contact p {
     font-weight: 300;
   }
 
-
   .submenu-1 .deep-menu i {
     margin-left: auto;
     font-size: 12px;
@@ -2834,6 +3435,66 @@ footer .row .footer-contact p {
     overflow: visible;
   }
 
+  .digital-marketing-services .container .row .section-heading {
+    padding: 25px 0;
+    font-size: 18px;
+  }
+  .marketing-strategy .row .right .strategy-container .strategy{
+    margin-bottom:10px;
+  }
+
+  .marketing-strategy .row .right .strategy-container .contact a {
+    padding: 7px 15px;
+    font-size: 15px;
+  }
+
+    /* -------------Digital marketing graph start ------------------ */
+
+    .digital-marketing-graph {
+      height: 250px;
+    }
+    
+    .digital-marketing-graph .container .row .img {
+      top: 100px;
+    }
+    
+      /* -------------Contact Us section start ------------------ */
+    .contact-us-section {
+      background: url('../images/digitalMarketingImages/contactUsBg.png');
+      background-size: cover;
+      background-position: bottom;
+      color: whitesmoke;
+      height: 300px;
+    }
+    
+    .contact-us-section .container .row .para {
+      font-size: 22px;
+      line-height: 28px;
+      margin-bottom: 20px;
+    }
+    
+    .contact-us-section .container .row .btn a {
+      padding: 7px 15px;
+      font-size: 16px;
+    }
+
+    .seo-services .container .row .section-heading {
+      font-size: 17px;
+      margin-bottom: 30px;
+    }
+    
+    .seo-services .container .row .section-heading::after {
+      width: 60px;
+      top: 110%;
+      left: 41%;
+    }
+    
+    .seo-services .container .row .section-para {
+      font-size: 16px;
+      color: var(--secondary-color);
+      margin-bottom: 20px;
+      line-height: 22px;
+    }
 
   /* -------------section-11 start ------------------ */
   .section-11 {
