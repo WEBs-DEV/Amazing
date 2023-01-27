@@ -638,7 +638,7 @@ a {
 .section-1 .box-row {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
 }
 
@@ -648,7 +648,6 @@ a {
 
 .section-1 .box-row .box {
   flex-basis: 300px;
-  min-height: 300px;
   margin: 10px 0;
   padding: 30px 10px;
   text-align: left;
@@ -706,7 +705,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  padding: 50px 15px;
+  padding: 50px 0;
 }
 
 .section-2 .row .left {
@@ -1257,8 +1256,6 @@ a {
 
 .section-7 .row .bottom-box .box .box-item {
   flex-basis: 300px;
-  min-width: 300px;
-  height: 100%;
   padding: 5px;
   margin: 30px 5px;
   box-shadow: 0 2px 3px gray;
@@ -1328,7 +1325,7 @@ a {
 
 .section-8 .row .bottom-box {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   align-content: space-between;
   position: relative;
   height: 100%;
@@ -1749,7 +1746,7 @@ footer .row div p {
   font-size: 15px;
   text-align: left;
   line-height: 25px;
-  padding: 3px;
+  padding: 3px 0;
   color: white;
 }
 
@@ -1761,7 +1758,7 @@ footer .row div>.social-icons {
 }
 
 footer .row div>.social-icons>li {
-  margin: 10px;
+  margin: 10px 0;
   width: 30px;
   height: 30px;
   text-align: center;
@@ -5724,17 +5721,16 @@ footer .row .footer-contact p {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
-    padding: 2px 10px;
+    padding: 2px 0;
   }
 
   .section-2 .row .left {
-    flex-basis: 420px;
+    flex-basis: 100%;
     text-align: left;
-    padding: 1px;
   }
 
   .section-2 .row .left h2 {
-    font-size: 14px;
+    font-size: 16px;
     margin: 0;
     margin-bottom: 10px;
   }
@@ -5742,12 +5738,12 @@ footer .row .footer-contact p {
   .section-2 .row .left .max-para {
     margin: 0;
     margin-bottom: 10px;
-    font-size: 18px;
+    font-size: 20px;
   }
 
   .section-2 .row .left .mini-para {
     margin: 0;
-    font-size: 14px;
+    font-size: 17px;
     line-height: 22px;
     margin: 20px 0;
   }
@@ -5759,11 +5755,12 @@ footer .row .footer-contact p {
 
   .section-2 .row .left .flex {
     display: flex;
+    justify-content: space-between;
     margin: 15px 0;
   }
 
   .section-2 .row .left .flex p {
-    font-size: 13px;
+    font-size: 16px;
     line-height: 20px;
     margin: 10px;
   }
@@ -5788,19 +5785,37 @@ footer .row .footer-contact p {
   }
 
   .section-2 .row .right {
-    min-width: 250px;
-    flex-basis: 420px;
+    flex-basis: 100%;
+    display: none;
+  }
+  .section-2 .row .right {
+    flex-basis: 100%;
   }
 
   .section-2 .row .right .img-box {
     padding: 40px 0;
     position: relative;
     text-align: right;
-    flex-basis: 50%;
+    flex-basis: 100%;
   }
 
   .section-2 .row .right .img-box .top-img {
     text-align: right;
+  }
+  .section-2 .row .right .img-box .top-img img {
+    width: 40%;
+  }
+
+  .section-2 .row .right .img-box .absolute-img {
+    text-align: left;
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+  }
+  .section-2 .row .right .img-box .absolute-img img {
+    width: 30%;
+    border-radius: 7px;
   }
 
   .section-2 .row .right .img-box .bottom-img {
@@ -5808,26 +5823,11 @@ footer .row .footer-contact p {
     text-align: right;
     margin-top: 20px;
     margin: 20px;
+  }  
+  .section-2 .row .right .img-box .bottom-img img{
+    width: 30%;
   }
 
-  .section-2 .row .right .img-box .top-img img {
-    width: 65%;
-  }
-
-  .section-2 .row .right .img-box .absolute-img {
-    width: 50%;
-    position: absolute;
-    top: 40%;
-    left: 10%;
-  }
-
-  .section-2 .row .right .img-box .absolute-img img {
-    width: 90%;
-  }
-
-  .section-2 .row .right .img-box img {
-    border-radius: 7px;
-  }
 
   /* -------------section-3 start ------------------ */
 
@@ -6618,7 +6618,7 @@ footer .row .footer-contact p {
   }
 
   footer .row div>.social-icons>li {
-    margin: 5px;
+    margin: 5px 0;
     width: 30px;
     height: 30px;
     text-align: left;
@@ -6683,8 +6683,13 @@ footer .row .footer-contact p {
     font-size: 14px;
   }
 
+  footer .row .footer-contact{
+    flex-basis: 400px;
+    min-width: 150px;
+  }
   footer .row .footer-contact p {
     font-size: 14px;
+    word-wrap: break-word;
     margin: 0;
   }
 
