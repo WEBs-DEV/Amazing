@@ -33,7 +33,6 @@ a {
 /*  header start */
 .header {
   z-index: 99;
-  width: 100%;
   background-color: var(--theme-color);
   box-shadow: 0px 2px 8px grey;
 }
@@ -197,7 +196,7 @@ a {
 }
 
 .menu>ul {
-  flex-basis: 650px;
+  flex-basis: 730px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -211,7 +210,7 @@ a {
 
 .menu>ul>li>a {
   display: inline-block;
-  padding: 6px 12px;
+  padding: 6px 10px;
   font-size: 17px;
   text-decoration: none;
   color: rgb(19, 18, 18);
@@ -237,7 +236,7 @@ a {
 .menu .btn a {
   display: inline-block;
   font-size: 16px;
-  padding: 6px 15px;
+  padding: 6px 10px;
   color: whitesmoke;
   background-color: var(--theme-color);
   border-radius: 8px;
@@ -1866,27 +1865,12 @@ footer .row .footer-contact p {
 @media only screen and (min-width: 1201px) {
 
   /*  header media query start */
-  .container {
-    width: 85%;
-    margin: auto;
-    position: relative;
-  }
 
 
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 1025px) and (max-width:1200px) {
-
-  /*  header end */
-
-  /* navbar start */
-  #navbar {
-    width: 100%;
-    z-index: 99;
-    margin-bottom: 2px;
-  }
-
   .menu {
     display: flex;
     justify-content: space-between;
@@ -1897,18 +1881,8 @@ footer .row .footer-contact p {
     margin: 3px 0;
     width: 130px;
   }
-
-  .menu>ul {
-    flex-basis: 620px;
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    align-items: center;
-  }
-
-
   /* navbar end */
+
   .section-1 .animation .animatebox img {
     width: 100%;
   }
@@ -2421,16 +2395,8 @@ footer .row .footer-contact p {
     z-index: 99;
     margin-bottom: 2px;
   }
-
-  #navbar .row {
-
-    width: 100%;
-  }
-
-  .menu {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  #navbar .nav-container{
+    width: 95%;
   }
 
   .menu .logo {
@@ -2438,12 +2404,8 @@ footer .row .footer-contact p {
     width: 120px;
   }
 
-  .menu .logo img {
-    width: 100%;
-  }
-
   .menu>ul {
-    flex-basis: 450px;
+    flex-basis: 600px;
   }
 
   .menu>ul>li {
@@ -2452,8 +2414,8 @@ footer .row .footer-contact p {
 
   .menu>ul>li>a {
     display: inline-block;
-    padding: 4px 5px;
-    font-size: 14px;
+    padding: 5px 6px;
+    font-size: 15px;
     text-decoration: none;
     border-radius: 10px;
     transition: all 0.3s;
