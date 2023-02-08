@@ -300,8 +300,6 @@
                     </div>
                 </div>
                
-               
-
                 <div class="right" data-aos="zoom-in" data-aos-duration="500" >
                     <div class="heading">
                         <h1>Contact Us</h1>
