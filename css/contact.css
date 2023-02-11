@@ -1,257 +1,48 @@
+/*------------google fonts links-------------*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
+  letter-spacing: 1px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
 }
 
+html,
 body {
-  background-color: ;
-  min-width: 100vw;
-  width: 100%;
+  margin: 0;
+  padding: 0;
   overflow-x: hidden;
+  background-color: rgb(255, 245, 245);
+}
+
+:root {
+  --theme-color: rgb(11, 71, 127);
+  --btn-bg-hover: rgb(209, 223, 222);
+  --primary-color: rgb(29, 7, 47);
+  --secondary-color: rgb(23, 1, 43);
+  --bg-color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 /*  header start */
 .header {
-  position: sticky;
-  top: 0;
   z-index: 99;
-  width: 100%;
-  text-align: center;
-  margin: 0 auto;
-  background-color: rgb(0, 90, 192);
-  box-shadow: 2px 2px 2px grey;
+  background-color: var(--theme-color);
+  box-shadow: 0px 2px 8px grey;
 }
 
 .container {
-  width: 75%;
-  text-align: center;
+  width: 85%;
   margin: auto;
   position: relative;
 }
 
-.header .container .center {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header .container .center .left {
-  flex-basis: 65%;
-}
-
-.header .container .center p {
-  display: inline-block;
-  width: 400px;
-  height: auto;
-  font-size: 14px;
-  color: white;
-  border-left: 1px solid white;
-  line-height: 40px;
-  text-align: left;
-  padding-left: 5px;
-  color: whitesmoke;
-  cursor: pointer;
-}
-
-.header .container .center p i {
-  font-size: 16px;
-  color: white;
-  margin-right: 10px;
-}
-
-.header .container .center .right .icons a {
-  display: inline-block;
-  line-height: 25px;
-  width: 25px;
-  height: 25px;
-  margin-right: 10px;
-  border-radius: 50%;
-  background-color: white;
-  transition: all 0.3s;
-}
-
-.header .container .center .right .icons a i {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.header .container .center .right .icons .fb {
-  color: rgb(0, 90, 192);
-}
-
-.header .container .center .right .icons .insta {
-  color: rgb(211, 12, 218);
-}
-
-.header .container .center .right .icons .twitter {
-  color: rgb(32, 19, 219);
-}
-
-.header .container .center .right .icons .youtube {
-  color: rgb(219, 29, 15);
-}
-
-.header .container .center .right .icons .linkedin {
-  color: rgb(5, 66, 197);
-}
-
-.header .container .center .right .icons a:hover {
-  background-color: rgb(161, 164, 165);
-}
-
-#navbar {
-  position: sticky;
-  top: 40px;
-  z-index: 99;
-  background-color: rgb(255, 255, 255);
-  margin: 0 auto;
-  margin-bottom: 2px;
-  box-shadow: 2px 2px 2px grey;
-}
-
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0;
-}
-
-.menu .logo {
-  margin: 10px 0;
-  flex-basis: 20%;
-  align-items: center;
-}
-
-.menu .logo img {
-  margin-left: 0;
-  width: 150px;
-}
-
-.menu > ul {
-  flex-basis: 80%;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-.menu > ul > li > a {
-  margin-right: 20px;
-  line-height: 25px;
-}
-
-.menu > ul > li > a {
-  display: inline-block;
-  padding: 0 20px;
-  font-size: 14px;
-  text-decoration: none;
-  background-color: ;
-  color: black;
-  border-radius: 10px;
-  transition: all 0.4s;
-}
-
-.menu > ul > li > a:hover {
-  background-color: rgb(209, 223, 222);
-}
-
-.menu .get-more-btn {
-  border: none;
-  display: inline-block;
-  width: 150px;
-  background-color: white;
-}
-
-.menu .get-more-btn a {
-  display: inline-block;
-  font-size: 14px;
-  padding: 7px 16px;
-  text-decoration: none;
-  background-color: white;
-  color: rgb(240, 251, 255);
-  background-color: blueviolet;
-  border-radius: 10px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  transition: all 0.4s;
-}
-
-.menu .get-more-btn a:hover {
-  background-color: rgb(209, 223, 222);
-  color: black;
-}
-
-.menu > ul > li > .submenu-1 {
-  position: absolute;
-  top: 90%;
-  left: 0px;
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: ;
-  z-index: 99;
-  padding: 5px;
-  list-style: none;
-  box-shadow: 0px 5px 4px grey;
-  background-color: rgb(248, 251, 255);
-  transform: translateY(100px);
-  transition: all 0.3s;
-  opacity: 0;
-  visibility: hidden;
-}
-
-.menu > ul > li:hover > .submenu-1 {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0px);
-}
-
-.submenu-1 .deep-menu {
-  display: flex;
-  list-style: none;
-  text-align: left;
-}
-
-.submenu-1 .deep-menu h3 {
-  padding-left: 5px;
-  margin: 20px 5px;
-}
-
-.menu ul li:hover {
-  display: block;
-  flex-direction: column;
-}
-
-.submenu-1 > .deep-menu {
-  display: flex;
-  flex-direction: column;
-}
-
-.submenu-1 > .deep-menu li {
-  list-style: none;
-  padding: 0px 0;
-  margin-top: 8px;
-}
-
-.submenu-1 > .deep-menu > ul > li a {
-  display: inline-block;
-  line-height: 15px;
-  padding: 3px 10px;
-  font-size: 12px;
-  padding-left: 0 5px;
-  text-decoration: none;
-  color: rgb(17, 17, 17);
-  border-radius: 10px;
-  transition: all 0.5s;
-}
-
-.submenu-1 > .deep-menu > ul > li a:hover {
-  background-color: rgb(224, 224, 224);
-}
 
 /* -------------contact-us banner start ------------------ */
 .contact-banner {
