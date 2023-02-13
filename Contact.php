@@ -122,7 +122,6 @@
                             </div>
                         
                                 <button type="submit" class="submit-btn" >Send message</button>
-                           
                         </form>
                     </div>
                 </div>
