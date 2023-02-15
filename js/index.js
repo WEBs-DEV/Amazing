@@ -14,6 +14,7 @@ function openService() {
 
 var swiper = new Swiper(".myTestimonial", {
   loop: true,
+  centerslider:false,
   autoplay: {
     delay: 2000,
     disableOnInteraction: false,
@@ -27,17 +28,20 @@ var swiper = new Swiper(".myTestimonial", {
     prevEl: ".swiper-button-prev",
   },
   breakpoints: {
-
-    640: {
-      slidesPerView: 3,
+    420: {
+      slidesPerView: 1,
       spaceBetween: 10,
     },
-    768: {
-      slidesPerView: 3,
+    720: {
+      slidesPerView: 2,
       spaceBetween: 10,
     },
     1024: {
-      slidesPerView: 4,
+      slidesPerView: 2,
+      spaceBetween: 10,
+    },
+    1500: {
+      slidesPerView: 3,
       spaceBetween: 10,
     },
   }
@@ -46,8 +50,7 @@ var swiper = new Swiper(".myTestimonial", {
 
 // swiper slider intializing for companies
 var swiper = new Swiper(".myCompanies", {
-  slidesPerView: 1,
-  spaceBetween: 10,
+  centerslider:false,
   loop: true,
   autoplay: {
     delay: 2500,
@@ -66,15 +69,15 @@ var swiper = new Swiper(".myCompanies", {
       slidesPerView: 3,
       spaceBetween: 20,
     },
-    640: {
-      slidesPerView: 4,
-      spaceBetween: 20,
-    },
     768: {
-      slidesPerView: 5,
+      slidesPerView: 4,
       spaceBetween: 40,
     },
     1024: {
+      slidesPerView: 5,
+      spaceBetween: 50,
+    },
+    1400: {
       slidesPerView: 6,
       spaceBetween: 50,
     },
