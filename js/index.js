@@ -16,7 +16,7 @@ var swiper = new Swiper(".myTestimonial", {
   loop: true,
   centerslider:false,
   autoplay: {
-    delay: 2000,
+    delay: 3000,
     disableOnInteraction: false,
   },
   pagination: {
@@ -53,7 +53,7 @@ var swiper = new Swiper(".myCompanies", {
   centerslider:false,
   loop: true,
   autoplay: {
-    delay: 2500,
+    delay: 2000,
     disableOnInteraction: false,
   },
   pagination: {
